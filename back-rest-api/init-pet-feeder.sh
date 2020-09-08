@@ -20,7 +20,7 @@ then
   sudo mkdir public
   cd public
   # download web release file
-  curl -s https://api.github.com/repos/iofirag/pet-feeder-web/releases/latest \
+  curl -s https://api.github.com/repos/iofirag/pet-feeder-monorepo/releases/latest \
     | grep browser_download_url \
     | cut -d '"' -f 4 \
     | wget -qi-
@@ -31,7 +31,7 @@ fi
 yarn start &
 
 # update project: pet-feeder-rest-api
-cd /home/pi/pet-feeder/pet-feeder
+cd /home/pi/pet-feeder/pet-feeder-monorepo
 if [ $? -eq 0 ]
 then 
   git reset --hard
