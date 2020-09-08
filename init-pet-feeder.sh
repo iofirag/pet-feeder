@@ -37,8 +37,9 @@ then
   git reset --hard
   git pull
   yarn
+  cd back-rest-api
+  yarn
 fi
-cd back-rest-api
 yarn start &
 
 cd /home/pi
