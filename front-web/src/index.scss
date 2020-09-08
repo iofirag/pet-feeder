@@ -1,0 +1,28 @@
+
+.modal {
+  width: 300px;
+  height: 300px;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-image: url('https://media3.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif');
+  &.success {
+    background-image: url('https://pngriver.com/wp-content/uploads/2018/04/Download-Success-PNG-Image.png');
+  }
+  &.fail {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRx1w_tGAOJ3h7zMTE2k66zeGg4lszkyx4pcuGISxkuAGTz8bNgd4rHL_Zhp4wjB7DWvdLfNW6hlSS2rVFpJ_vVjQ&usqp=CAU&ec=45690271');
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
