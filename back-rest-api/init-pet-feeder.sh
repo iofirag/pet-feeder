@@ -31,13 +31,14 @@ fi
 yarn start &
 
 # update project: pet-feeder-rest-api
-cd /home/pi/pet-feeder/pet-feeder-rest-api
+cd /home/pi/pet-feeder/pet-feeder
 if [ $? -eq 0 ]
 then 
   git reset --hard
   git pull
   yarn
 fi
+cd back-rest-api
 yarn start &
 
 cd /home/pi
