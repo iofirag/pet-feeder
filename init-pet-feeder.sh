@@ -14,8 +14,8 @@ if [ $? -eq 0 ]
 then 
   # online
   git reset --hard
-  git pull
-  yarn
+  git pull &
+  yarn &
   sudo rm -rf public
   sudo mkdir public
   cd public
@@ -35,10 +35,10 @@ cd /home/pi/pet-feeder/pet-feeder-monorepo
 if [ $? -eq 0 ]
 then 
   git reset --hard
-  git pull
-  yarn
+  git pull &
+  yarn &
   cd back-rest-api
-  yarn
+  yarn &
 fi
 yarn start &
 
