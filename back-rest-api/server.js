@@ -133,8 +133,8 @@ async function feed() {
     // Feed
     const command = `sudo python ${process.env.RPI_SERVO_CONTROLLER_PATH} -d ${process.env.ROTATION_DIRECTION} -t ${config.turnSeconds}`
     console.log(command);
-    // const {stdout, stderr} = await exec(command, { shell: true })
-    // if (stderr) throw stderr;
+    const {stdout, stderr} = await exec(command, { shell: true })
+    if (stderr) throw stderr;
     // Complete feed
     await setConfig({lastFeedTsList: [...config.lastFeedTsList, (new Date).getTime()]})
     console.log('feed completed.')
