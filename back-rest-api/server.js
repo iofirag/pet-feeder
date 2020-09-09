@@ -49,7 +49,7 @@ app
 })
 .post('/settings', async (req, res) => {
   try {
-    const availableKeys = ['petName','petPictureUrl','feedTime','turnSeconds','numberOfFeedEveryDay','delayHoursBetweenFeeds'];
+    const availableKeys = ['petName','petPictureUrl','morningTime','feedTime','turnSeconds','numberOfFeedEveryDay','delayHoursBetweenFeeds'];
     const newConfig = {}
     availableKeys.forEach(v => {
       if (v in req.body && req.body[v]) newConfig[v] = req.body[v];

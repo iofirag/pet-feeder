@@ -30,6 +30,7 @@ export class MyProvider extends Component<any,any> {
       settings: {
         petName: "pet-name",
         petPictureUrl: defaultPetPictureUrl,
+        morningTime: '00:00',
         feedTime: '15:30',
         turnSeconds: 7,
         numberOfFeedEveryDay: 1,

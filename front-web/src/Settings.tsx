@@ -40,6 +40,7 @@ export class Settings extends React.Component<any, any> {
         body: JSON.stringify({
           petName: this.props.context.state.settings.petName,
           petPictureUrl: this.props.context.state.settings.petPictureUrl,
+          morningTime: this.props.context.state.settings.morningTime,
           feedTime: this.props.context.state.settings.feedTime,
           turnSeconds: this.props.context.state.settings.turnSeconds,
           numberOfFeedEveryDay: this.props.context.state.settings.numberOfFeedEveryDay,
@@ -79,6 +80,12 @@ export class Settings extends React.Component<any, any> {
                   <label className="control-label">
                     pet picture url:
                     <input value={context.state.settings.petPictureUrl} onChange={(e) => this.handleChange(e, context)} name="petPictureUrl" type="text" className="form-control required"/>
+                  </label><br/>
+
+                  {/* morning time */}
+                  <label className="control-label">
+                    morning Time:
+                    <input value={context.state.settings.morningTime} onChange={(e) => this.handleChange(e, context)} name="morningTime" type="time" className="form-control required"/>
                   </label><br/>
 
                   {/* pet feed time */}
