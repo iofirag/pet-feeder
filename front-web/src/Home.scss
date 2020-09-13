@@ -10,5 +10,17 @@
       background-size: 300px;
       background-repeat: no-repeat;
     }
+
+    .ts-grid {
+      margin: 0 auto;
+
+      .list-wrapper {
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 250px;
+      }
+    }
   }
 }
