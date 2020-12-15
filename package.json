@@ -1,4 +1,8 @@
 {
   "name": "pet-feeder",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "scripts": {
+    "-----SERVER------": "",
+    "back-rest-api": "node back-rest-api/server.js"
+  }
 }

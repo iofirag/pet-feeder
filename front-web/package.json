@@ -28,8 +28,6 @@
     "node-sass": "^4.14.1"
   },
   "scripts": {
-    "-----SERVER------": "",
-    "back-rest-api": "node back-rest-api/server.js",
     "-----CLIENT------": "",
     "start": "react-scripts start",
     "build": "react-scripts build",
